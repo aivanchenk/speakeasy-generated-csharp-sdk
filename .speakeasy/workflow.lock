@@ -1,0 +1,36 @@
+speakeasyVersion: 1.511.0
+sources:
+    Signicat Authentication REST API:
+        sourceNamespace: signicat-authentication-rest-api
+        sourceRevisionDigest: sha256:505dd3e55a1af2479a57b747fe97d0638ab75506cf96801fd2fce902192cba20
+        sourceBlobDigest: sha256:57c209a02b72d71e4d1ca1e6ab4a36f4719b33a667c87061ffe2ae1f7bc56419
+        tags:
+            - latest
+            - v1
+targets:
+    signicat:
+        source: Signicat Authentication REST API
+        sourceNamespace: signicat-authentication-rest-api
+        sourceRevisionDigest: sha256:505dd3e55a1af2479a57b747fe97d0638ab75506cf96801fd2fce902192cba20
+        sourceBlobDigest: sha256:57c209a02b72d71e4d1ca1e6ab4a36f4719b33a667c87061ffe2ae1f7bc56419
+        codeSamplesNamespace: signicat-authentication-rest-api-csharp-code-samples
+        codeSamplesRevisionDigest: sha256:9c25b2f8c5283ee9704d1c623dd61fd57475e5e5361d2e99a90b92b5e048a3f6
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Signicat Authentication REST API:
+            inputs:
+                - location: ../Authentication-REST-API-specs.json
+            registry:
+                location: registry.speakeasyapi.dev/signicat/sdks/signicat-authentication-rest-api
+    targets:
+        signicat:
+            target: csharp
+            source: Signicat Authentication REST API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/signicat/sdks/signicat-authentication-rest-api-csharp-code-samples
+                labelOverride:
+                    fixedValue: Csharp (SDK)
+                blocking: false

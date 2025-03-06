@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Signicat Authentication REST API:
+        inputs:
+            - location: ../Authentication-REST-API-specs.json
+        registry:
+            location: registry.speakeasyapi.dev/signicat/sdks/signicat-authentication-rest-api
+targets:
+    signicat:
+        target: csharp
+        source: Signicat Authentication REST API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/signicat/sdks/signicat-authentication-rest-api-csharp-code-samples
+            labelOverride:
+                fixedValue: Csharp (SDK)
+            blocking: false

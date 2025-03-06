@@ -1,0 +1,132 @@
+lockVersion: 2.0.0
+id: ebe2164c-67ee-4a7d-a359-adb6b2e1653f
+management:
+  docChecksum: 9134b3ed33f285e981b7ec0e044a5c37
+  docVersion: v1
+  speakeasyVersion: 1.511.0
+  generationVersion: 2.541.0
+  releaseVersion: 0.0.1
+  configChecksum: 5c5f17d7e956427d8a156bfac404117b
+features:
+  csharp:
+    additionalDependencies: 0.1.0
+    core: 3.10.14
+    flattening: 2.81.3
+    globalSecurityCallbacks: 0.1.0
+    globalServerURLs: 2.82.3
+    intellisenseMarkdownSupport: 0.1.0
+    methodArguments: 0.2.0
+    nullables: 0.1.1
+    responseFormat: 0.0.4
+    sdkHooks: 0.1.0
+generatedFiles:
+  - .gitattributes
+  - Openapi.sln
+  - USAGE.md
+  - docs/Models/Components/Alg.md
+  - docs/Models/Components/BrokerResponseErrorDetails.md
+  - docs/Models/Components/CallbackUrls.md
+  - docs/Models/Components/EncryptionKey.md
+  - docs/Models/Components/HTTPMetadata.md
+  - docs/Models/Components/Kty.md
+  - docs/Models/Components/MessageTransportProperties.md
+  - docs/Models/Components/Nin.md
+  - docs/Models/Components/PrefilledInput.md
+  - docs/Models/Components/RequestedLoa.md
+  - docs/Models/Components/SessionData.md
+  - docs/Models/Components/SessionDataDto.md
+  - docs/Models/Components/SessionDataDtoFlow.md
+  - docs/Models/Components/SessionDataDtoStatus.md
+  - docs/Models/Components/SessionDataFlow.md
+  - docs/Models/Components/SessionDataStatus.md
+  - docs/Models/Components/SessionEnvironment.md
+  - docs/Models/Components/SessionRequestDto.md
+  - docs/Models/Components/SessionRequestDtoFlow.md
+  - docs/Models/Components/Subject.md
+  - docs/Models/Components/Use.md
+  - docs/Models/Requests/CancelSessionRequest.md
+  - docs/Models/Requests/CancelSessionResponse.md
+  - docs/Models/Requests/CreateSessionResponse.md
+  - docs/Models/Requests/GetSessionRequest.md
+  - docs/Models/Requests/GetSessionResponse.md
+  - docs/sdks/authenticationsession/README.md
+  - docs/sdks/signicat/README.md
+  - global.json
+  - src/Openapi/AuthenticationSession.cs
+  - src/Openapi/Hooks/HookTypes.cs
+  - src/Openapi/Hooks/SDKHooks.cs
+  - src/Openapi/Models/Components/Alg.cs
+  - src/Openapi/Models/Components/BrokerResponseErrorDetails.cs
+  - src/Openapi/Models/Components/CallbackUrls.cs
+  - src/Openapi/Models/Components/EncryptionKey.cs
+  - src/Openapi/Models/Components/HTTPMetadata.cs
+  - src/Openapi/Models/Components/Kty.cs
+  - src/Openapi/Models/Components/MessageTransportProperties.cs
+  - src/Openapi/Models/Components/Nin.cs
+  - src/Openapi/Models/Components/PrefilledInput.cs
+  - src/Openapi/Models/Components/RequestedLoa.cs
+  - src/Openapi/Models/Components/SessionData.cs
+  - src/Openapi/Models/Components/SessionDataDto.cs
+  - src/Openapi/Models/Components/SessionDataDtoFlow.cs
+  - src/Openapi/Models/Components/SessionDataDtoStatus.cs
+  - src/Openapi/Models/Components/SessionDataFlow.cs
+  - src/Openapi/Models/Components/SessionDataStatus.cs
+  - src/Openapi/Models/Components/SessionEnvironment.cs
+  - src/Openapi/Models/Components/SessionRequestDto.cs
+  - src/Openapi/Models/Components/SessionRequestDtoFlow.cs
+  - src/Openapi/Models/Components/Subject.cs
+  - src/Openapi/Models/Components/Use.cs
+  - src/Openapi/Models/Errors/APIException.cs
+  - src/Openapi/Models/Requests/CancelSessionRequest.cs
+  - src/Openapi/Models/Requests/CancelSessionResponse.cs
+  - src/Openapi/Models/Requests/CreateSessionResponse.cs
+  - src/Openapi/Models/Requests/GetSessionRequest.cs
+  - src/Openapi/Models/Requests/GetSessionResponse.cs
+  - src/Openapi/Openapi.csproj
+  - src/Openapi/Signicat.cs
+  - src/Openapi/Utils/AnyDeserializer.cs
+  - src/Openapi/Utils/BigIntStrConverter.cs
+  - src/Openapi/Utils/DecimalStrConverter.cs
+  - src/Openapi/Utils/EnumConverter.cs
+  - src/Openapi/Utils/FlexibleObjectDeserializer.cs
+  - src/Openapi/Utils/HeaderSerializer.cs
+  - src/Openapi/Utils/IsoDateTimeSerializer.cs
+  - src/Openapi/Utils/RequestBodySerializer.cs
+  - src/Openapi/Utils/ResponseBodyDeserializer.cs
+  - src/Openapi/Utils/Retries/BackoffStrategy.cs
+  - src/Openapi/Utils/Retries/Retries.cs
+  - src/Openapi/Utils/Retries/RetryConfig.cs
+  - src/Openapi/Utils/SecurityMetadata.cs
+  - src/Openapi/Utils/SpeakeasyHttpClient.cs
+  - src/Openapi/Utils/SpeakeasyMetadata.cs
+  - src/Openapi/Utils/URLBuilder.cs
+  - src/Openapi/Utils/Utilities.cs
+examples:
+  CreateSession:
+    speakeasy-default-create-session:
+      requestBody:
+        application/json: {"prefilledInput": {"nin": "07128312345", "mobile": "+4799716935", "email": "bruce@wayneenterprice.com", "userName": "brucewayne", "dateOfBirth": "1973-12-07", "deviceId": "136OP-A1", "firstName": "Bruce", "lastName": "Wayne", "bankAccountNumber": "0071234567", "organisation": "Signicat"}, "additionalParameters": {"sbid_flow": "QR", "sbid_end_user_ip": "127.0.0.1"}, "callbackUrls": {"success": "https://example.com/success", "abort": "https://example.com/abort", "error": "https://example.com/error"}, "encryptionPublicKey": {"kty": "rsa", "use": "enc", "kid": "encryption-key-04ceb013816d6244aca3310fa69b0bcf", "alg": "RSA-OAEP", "e": "AQAB", "n": "zN4Vqjwfs8uSqlOyjJLxw89BzkOW_blablabla-kv7wEllGQYysBSoj2ULs9qqQd", "crv": "P-256", "x": "O_rs_R-2hZmBYaUzMlvBCwRosV8mDGzKv-kVSG9PgVY", "y": "1Xw6_lF0VCHQjbIBtunedGA3UnldovAiCC97_9LkM0w", "d": null}, "requestedLoa": "low", "tags": ["tag1", "tag2"], "returnUrl": "https://example.com/auth_callback", "embeddedParentDomains": ["signicat.com", "example.com"], "allowedProviders": ["nbid", "sbid", "idin", "digid", "eherkenning", "spid"], "language": "en", "flow": "redirect", "themeId": "agkaa12", "requestedAttributes": ["firstName", "lastName", "email", "dateOfBirth", "phoneNumber", "address", "gender"], "externalReference": "my-reference-12345", "usageReference": "my-usage-reference-12345", "sessionLifetime": 600, "requestDomain": "myapp.app.signicat.com"}
+      responses:
+        "200":
+          application/json: {"id": "3d07c219-0a88-45be-9cfc-91e9d095a1e9", "accountId": "a-rand-cnnJOtEwafuhom0nv", "authenticationUrl": "https://demo.app.signicat.com/broker/sp/external-service/login?messageId=123abc&transactionId=abc123", "statusUrl": "https://demo.app.signicat.com/broker/sp/external-service/login?messageId=123abc&transactionId=abc123", "status": "SUCCESS", "statusDetail": "Error because reasons.", "provider": "nbid", "subject": {"id": "9578-6000-4-48855", "idpId": "9578-6000-4-48855", "name": "John Doe", "firstName": "John", "middleName": "Louis", "lastName": "Doe", "dateOfBirth": "2002-06-01", "nin": {"value": "123456789", "issuingCountry": "NOR", "type": "SOCIAL"}, "email": "john_doe@mail.com", "attribute_1": "random_attr", "attribute_2": "random_attr_4"}, "callbackUrls": {"success": "https://example.com/success", "abort": "https://example.com/abort", "error": "https://example.com/error"}, "idpData": {"autoStartToken": "f0c9d6db-c586-4acb-b2ba-323b54e42504"}, "environment": {"ipAddress": "127.0.0.1", "userAgent": "user_agent_test"}, "error": {"type": "https://developer.signicat.com/docs/eid-hub/error-codes.html#broker-error-codes", "title": "Invalid Account ID Error", "detail": "An accountId is sent as part of API calls. This error indicates that an unexpected accountId was sent in the request.", "code": "invalid_account_id"}, "messageTransportProperties": {"messageLevelEncryption": "NOT_REQUIRED", "requireHsmSigning": false}, "tags": ["tag1", "tag2"], "allowedProviders": ["nbid", "sbid", "idin", "digid", "eherkenning", "spid"], "language": "en", "flow": "redirect", "themeId": "agkaa12", "requestedAttributes": ["firstName", "lastName", "email", "dateOfBirth", "phoneNumber", "address", "gender"], "externalReference": "my-reference-12345", "usageReference": "my-usage-reference-12345", "sessionLifetime": 600, "requestDomain": "myapp.app.signicat.com", "expiresAt": "2024-06-01T13:45:30"}
+          application/jose: "0x7b0f3ebF5B"
+  GetSession:
+    speakeasy-default-get-session:
+      parameters:
+        path:
+          id: "<id>"
+        query: {}
+      responses:
+        "200":
+          application/json: {"accountId": "<id>", "subject": {"id": "9578-6000-4-48855", "idpId": "9578-6000-4-48855", "name": "John Doe", "firstName": "John", "middleName": "Louis", "lastName": "Doe", "dateOfBirth": "2002-06-01", "nin": {"value": "123456789", "issuingCountry": "NOR", "type": "SOCIAL"}, "email": "john_doe@mail.com", "attribute_1": "random_attr", "attribute_2": "random_attr_4"}, "callbackUrls": {"success": "https://example.com/success", "abort": "https://example.com/abort", "error": "https://example.com/error"}, "environment": {"ipAddress": "127.0.0.1", "userAgent": "user_agent_test"}, "error": {"type": "https://developer.signicat.com/docs/eid-hub/error-codes.html#broker-error-codes", "title": "Invalid Account ID Error", "detail": "An accountId is sent as part of API calls. This error indicates that an unexpected accountId was sent in the request.", "code": "invalid_account_id"}, "messageTransportProperties": {"messageLevelEncryption": "NOT_REQUIRED", "requireHsmSigning": false}, "allowedProviders": ["nbid", "sbid", "idin", "digid", "eherkenning", "spid"], "language": "en", "flow": "redirect", "themeId": "agkaa12", "requestedAttributes": ["firstName", "lastName", "email", "dateOfBirth", "phoneNumber", "address", "gender"], "externalReference": "my-reference-12345", "usageReference": "my-usage-reference-12345", "sessionLifetime": 600, "requestDomain": "myapp.app.signicat.com", "expiresAt": "2024-06-01T13:45:30"}
+  CancelSession:
+    speakeasy-default-cancel-session:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {"id": "3d07c219-0a88-45be-9cfc-91e9d095a1e9", "accountId": "a-rand-cnnJOtEwafuhom0nv", "authenticationUrl": "https://demo.app.signicat.com/broker/sp/external-service/login?messageId=123abc&transactionId=abc123", "statusUrl": "https://demo.app.signicat.com/broker/sp/external-service/login?messageId=123abc&transactionId=abc123", "status": "SUCCESS", "statusDetail": "Error because reasons.", "provider": "nbid", "subject": {"id": "9578-6000-4-48855", "idpId": "9578-6000-4-48855", "name": "John Doe", "firstName": "John", "middleName": "Louis", "lastName": "Doe", "dateOfBirth": "2002-06-01", "nin": {"value": "123456789", "issuingCountry": "NOR", "type": "SOCIAL"}, "email": "john_doe@mail.com", "attribute_1": "random_attr", "attribute_2": "random_attr_4"}, "callbackUrls": {"success": "https://example.com/success", "abort": "https://example.com/abort", "error": "https://example.com/error"}, "idpData": {"autoStartToken": "f0c9d6db-c586-4acb-b2ba-323b54e42504"}, "environment": {"ipAddress": "127.0.0.1", "userAgent": "user_agent_test"}, "error": {"type": "https://developer.signicat.com/docs/eid-hub/error-codes.html#broker-error-codes", "title": "Invalid Account ID Error", "detail": "An accountId is sent as part of API calls. This error indicates that an unexpected accountId was sent in the request.", "code": "invalid_account_id"}, "messageTransportProperties": {"messageLevelEncryption": "NOT_REQUIRED", "requireHsmSigning": false}, "tags": ["tag1", "tag2"], "allowedProviders": ["nbid", "sbid", "idin", "digid", "eherkenning", "spid"], "language": "en", "flow": "redirect", "themeId": "agkaa12", "requestedAttributes": ["firstName", "lastName", "email", "dateOfBirth", "phoneNumber", "address", "gender"], "externalReference": "my-reference-12345", "usageReference": "my-usage-reference-12345", "sessionLifetime": 600, "requestDomain": "myapp.app.signicat.com", "expiresAt": "2024-06-01T13:45:30"}
+          application/jose: "0x267EcfC6b8"
+examplesVersion: 1.0.0
+generatedTests: {}

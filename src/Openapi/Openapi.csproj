@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Openapi</PackageId>
+    <Version>0.0.1</Version>
+    <TargetFramework>net8.0</TargetFramework>
+    <Authors>Speakeasy</Authors>
+    <Copyright>Copyright (c) Speakeasy 2025</Copyright>
+    <Description>Signicat Authentication REST API: Signicat&apos;s Authentication REST API allows you to interact with the Signicat <a href="https://developer.signicat.com/docs/eid-hub/">eID Hub</a>. Our digital solutions enable identity verification and authentication through a wide selection of electronic <a href="https://developer.signicat.com/identity-methods/">ID methods</a>. <br/>
+ The Authentication REST API is a REST API with all request and response bodies formatted in JSON. <br/>
+ # Authorisation<br/>
+ For more information on how to access the Authentication REST API, see the <a href="https://developer.signicat.com/docs/accessing-api-products.html">Accessing Signicat API products</a> guide in our developer documentation.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\docs\**\*" Pack="true" PackagePath="\docs"  CopyToOutputDirectory="PreserveNewest"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="newtonsoft.json" Version="13.0.3" />
+    <PackageReference Include="nodatime" Version="3.1.9" />
+  </ItemGroup>
+
+</Project>

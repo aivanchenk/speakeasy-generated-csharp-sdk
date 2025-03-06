@@ -1,0 +1,11 @@
+# MessageTransportProperties
+
+Message Transport Properties.
+
+
+## Fields
+
+| Field                                                                                               | Type                                                                                                | Required                                                                                            | Description                                                                                         | Example                                                                                             |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `MessageLevelEncryption`                                                                            | *string*                                                                                            | :heavy_minus_sign:                                                                                  | Gets or sets the Message Level Encryption.                                                          | NOT_REQUIRED                                                                                        |
+| `RequireHsmSigning`                                                                                 | *bool*                                                                                              | :heavy_minus_sign:                                                                                  | Gets or sets a value indicating whether gets or sets a value indicating if Hsm Signing is required. | false                                                                                               |
