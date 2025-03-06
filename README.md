@@ -12,7 +12,7 @@ Developer-friendly & type-safe Csharp SDK specifically catered to leverage *Open
 
 <br /><br />
 > [!IMPORTANT]
-> This SDK is not yet ready for production use. To complete setup please follow the steps outlined in your [workspace](https://app.speakeasy.com/org/signicat/sdks). Delete this section before > publishing to a package manager.
+> This SDK is not yet ready for production use. To complete setup please follow the steps outlined in your [workspace](https://app.speakeasy.com/org/signicat/sdks). Delete this section before > publishing to a package manager. (Asks to configure GitHub actions and Publish)
 
 <!-- Start Summary [summary] -->
 ## Summary
